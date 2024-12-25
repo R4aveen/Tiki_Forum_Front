@@ -16,6 +16,8 @@ function Home() {
 		dispatch(fetchForosThunk());
 	}, [dispatch]);
 
+
+	
 	return (
 		<PageWrapper isProtectedRoute={true} title='Home'>
 			<Subheader>
