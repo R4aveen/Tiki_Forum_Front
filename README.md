@@ -4,57 +4,57 @@
 
 [![Fyr | React TypeScript Tailwind Admin & AI Chat Template](./src/assets/Cover.png)](https://fyr.omtanke.studio)
 
-# Getting Started with Vite
+# Empezando con Vite
 
-This project was bootstrapped with [Vite](https://github.com/vitejs/vite) and [TailwindCSS](https://github.com/tailwindlabs/tailwindcss).
+Este proyecto fue creado con [Vite](https://github.com/vitejs/vite) y [TailwindCSS](https://github.com/tailwindlabs/tailwindcss).
 
-## Install Dependencies
+## Instalar Dependencias
 
-### `npm install` or `yarn install`
+### `npm install` o `yarn install`
 
-## Available Scripts
+## Scripts Disponibles
 
-In the project directory, you can run:
+En el directorio del proyecto, puedes ejecutar:
 
-### `npm run dev` or `yarn dev`
+### `npm run dev` o `yarn dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:5174](http://localhost:5174) to view it in the browser.
+Ejecuta la aplicación en modo de desarrollo.\
+Abre [http://localhost:5174](http://localhost:5174) para verlo en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+La página se recargará si haces ediciones.\
+También verás cualquier error de lint en la consola.
 
-### `npm run build` or `yarn build`
+### `npm run build` o `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Construye la aplicación para producción en la carpeta `build`.\
+Empaqueta correctamente React en modo de producción y optimiza la construcción para el mejor rendimiento.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La construcción está minificada y los nombres de archivo incluyen los hashes.\
+¡Tu aplicación está lista para ser desplegada!
 
-### `npm run lint` or `yarn run lint`
+### `npm run lint` o `yarn run lint`
 
-Controls the project according to Eslint rules.
+Controla el proyecto según las reglas de Eslint.
 
-### `npm run lint:fix` or `yarn run lint:fix`
+### `npm run lint:fix` o `yarn run lint:fix`
 
-Inspects the project according to Eslint rules and corrects them according to those rules.
+Inspecciona el proyecto según las reglas de Eslint y las corrige según esas reglas.
 
-### `npm run prettier:fix` or `yarn run prettier:fix`
+### `npm run prettier:fix` o `yarn run prettier:fix`
 
-Inspects the project according to Prettier rules and corrects them according to those rules.
+Inspecciona el proyecto según las reglas de Prettier y las corrige según esas reglas.
 
-### `npm run icon` or `yarn run icon`
+### `npm run icon` o `yarn run icon`
 
-Prepares svg format icons in the `SvgIcons` folder for use in the project. Names the icon's name in `PascalCase` format.
+Prepara iconos en formato svg en la carpeta `SvgIcons` para su uso en el proyecto. Nombra el icono en formato `PascalCase`.
 
-## Learn More
+## Aprende Más
 
-You can learn more in the [Vite React documentation](https://vitejs.dev/guide/).
+Puedes aprender más en la [documentación de Vite React](https://vitejs.dev/guide/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para aprender React, consulta la [documentación de React](https://reactjs.org/).
 
-# Project Structure
+# Estructura del Proyecto
 
 ```
 fyr
@@ -108,17 +108,17 @@ fyr
 └── vite.config.ts
 ```
 
-# Tailwind Configure
+# Configuración de Tailwind
 
-There are 22 colors defined in Tailwind, we have added 8 (zinc `#71717a`, red `#ef4444`, amber `#f59e0b`, lime `#84cc16`, emerald `#10b981`, sky `#0ea5e9`, blue `#3b82f6`, violet `#8b5cf6`) of them for the components of Fyr. If you wish, you can activate other colors or define new colors.
+Hay 22 colores definidos en Tailwind, hemos añadido 8 (zinc `#71717a`, rojo `#ef4444`, ámbar `#f59e0b`, lima `#84cc16`, esmeralda `#10b981`, cielo `#0ea5e9`, azul `#3b82f6`, violeta `#8b5cf6`) de ellos para los componentes de Fyr. Si lo deseas, puedes activar otros colores o definir nuevos colores.
 
-You can add new values to "TColors" in the [src/types/colors.type.ts](src/types/colors.type.ts) file for use in the project and don't forget to add them to the [safelist](https://tailwindcss.com/docs/content-configuration#safelisting-classes).
+Puedes añadir nuevos valores a "TColors" en el archivo [src/types/colors.type.ts](src/types/colors.type.ts) para su uso en el proyecto y no olvides añadirlos a la [safelist](https://tailwindcss.com/docs/content-configuration#safelisting-classes).
 
-# Theme Configure
+# Configuración del Tema
 
-You can edit the theme's settings in the [src/config/theme.config.ts](src/config/theme.config.ts) file.
+Puedes editar la configuración del tema en el archivo [src/config/theme.config.ts](src/config/theme.config.ts).
 
-# Pages Configure
+# Configuración de Páginas
 
 ```tsx
 export const examplePages = {
@@ -145,9 +145,9 @@ export const examplePages = {
 };
 ```
 
-If you save your page information in the above format in the [src/config/pages.config.ts](src/config/pages.config.ts) file, you can easily use it in the menus.
+Si guardas la información de tu página en el formato anterior en el archivo [src/config/pages.config.ts](src/config/pages.config.ts), puedes usarla fácilmente en los menús.
 
-# Architecture of the project
+# Arquitectura del Proyecto
 
 ## src/index.tsx
 
@@ -183,7 +183,7 @@ return (
 
 #### src/components/router/AsideRouter.tsx
 
-If you do not want to customize the project in this file, you do not need to make any changes. In this component, only [src/routes/asideRoutes.tsx](src/routes/asideRoutes.tsx) file sets which component will be shown in which path.
+Si no deseas personalizar el proyecto en este archivo, no necesitas hacer ningún cambio. En este componente, solo el archivo [src/routes/asideRoutes.tsx](src/routes/asideRoutes.tsx) establece qué componente se mostrará en qué ruta.
 
 ```tsx
 const asideRoutes: RouteProps[] = [
@@ -192,11 +192,11 @@ const asideRoutes: RouteProps[] = [
 ];
 ```
 
-You can set the "Aside Templates" to be displayed on the paths you want. If you don't want any "Aside" in a path, you can set the element to `null`.
+Puedes establecer las "Plantillas de Aside" para que se muestren en las rutas que desees. Si no deseas ningún "Aside" en una ruta, puedes establecer el elemento en `null`.
 
 #### src/components/router/HeaderRouter.tsx
 
-If you do not want to customize the project in this file, you do not need to make any changes. In this component, only [src/routes/headerRoutes.tsx](src/routes/headerRoutes.tsx) file sets which component will be shown in which path.
+Si no deseas personalizar el proyecto en este archivo, no necesitas hacer ningún cambio. En este componente, solo el archivo [src/routes/headerRoutes.tsx](src/routes/headerRoutes.tsx) establece qué componente se mostrará en qué ruta.
 
 ```tsx
 const headerRoutes: RouteProps[] = [
@@ -210,13 +210,13 @@ const headerRoutes: RouteProps[] = [
 ];
 ```
 
-You can set the "Header Templates" to be displayed on the paths you want. If you don't want any "Header" in a path, you can set the element to `null`.
+Puedes establecer las "Plantillas de Header" para que se muestren en las rutas que desees. Si no deseas ningún "Header" en una ruta, puedes establecer el elemento en `null`.
 
-If you will have data about the page in "Header", specify that there will not be any "Header" in that path with `null` and define it within the page. So you don't have to worry about moving the data up.
+Si tendrás datos sobre la página en "Header", especifica que no habrá ningún "Header" en esa ruta con `null` y defínelo dentro de la página. Así no tendrás que preocuparte por mover los datos hacia arriba.
 
 #### src/components/router/ContentRouter.tsx
 
-You can use [React Lazy](https://react.dev/reference/react/lazy#lazy) when importing pages.
+Puedes usar [React Lazy](https://react.dev/reference/react/lazy#lazy) al importar páginas.
 
 ```tsx
 const contentRoutes: RouteProps[] = [
@@ -227,7 +227,7 @@ const contentRoutes: RouteProps[] = [
 ];
 ```
 
-##### Example Page
+##### Página de Ejemplo
 
 ```tsx
 import React from 'react';
@@ -253,7 +253,7 @@ const ExamplePage = () => {
 export default ExamplePage;
 ```
 
-You can use this method on pages where you set the null value for "Header" as described in the [src/routes/headerRoutes.tsx](#srccomponentsrouterheaderroutertsx) section.
+Puedes usar este método en páginas donde establezcas el valor nulo para "Header" como se describe en la sección [src/routes/headerRoutes.tsx](#srccomponentsrouterheaderroutertsx).
 
 ```tsx
 import React from 'react';
@@ -288,7 +288,7 @@ export default ExamplePage;
 
 #### src/components/router/FooterRouter.tsx
 
-If you do not want to customize the project in this file, you do not need to make any changes. In this component, only [src/routes/footerRoutes.tsx](src/routes/footerRoutes.tsx) file sets which component will be shown in which path.
+Si no deseas personalizar el proyecto en este archivo, no necesitas hacer ningún cambio. En este componente, solo el archivo [src/routes/footerRoutes.tsx](src/routes/footerRoutes.tsx) establece qué componente se mostrará en qué ruta.
 
 ```tsx
 const footerRoutes: RouteProps[] = [
@@ -297,6 +297,7 @@ const footerRoutes: RouteProps[] = [
 ];
 ```
 
-You can set the "Footer Templates" to be displayed on the paths you want. If you don't want any "Footer" in a path, you can set the element to `null`.
+Puedes establecer las "Plantillas de Footer" para que se muestren en las rutas que desees. Si no deseas ningún "Footer" en una ruta, puedes establecer el elemento en `null`.
 
-If you will have data about the page in "Footer", specify that there will not be any "Footer" in that path with `null` and define it within the page. So you don't have to worry about moving the data up.
+Si tendrás datos sobre la página en "Footer", especifica que no habrá ningún "Footer" en esa ruta con `null` y defínelo dentro de la página. Así no tendrás que preocuparte por mover los datos hacia arriba.
+
