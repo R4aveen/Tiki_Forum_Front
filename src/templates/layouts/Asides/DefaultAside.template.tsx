@@ -43,34 +43,14 @@ const DefaultAsideTemplate = () => {
 			<AsideBody>
 				<Nav>
 					{/* <NavItem text={'Prueba Aside'}></NavItem> */}
-					<AuthorityCheckNav authority={Pages.listaInvitacionesEmpresas.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.listaInvitacionesEmpresas.text} to={Pages.listaInvitacionesEmpresas.to} icon={Pages.listaInvitacionesEmpresas.icon} id={Pages.listaInvitacionesEmpresas.id}></NavItem>
+					<AuthorityCheckNav authority={Pages.Foro.authority} userAuthority={listaGrupos?.grupos}>
+						<NavItem text={Pages.Foro.text} to={Pages.Foro.to} icon={Pages.Foro.icon} id={Pages.Foro.id}></NavItem>
 					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.ListaEmpresas.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.ListaEmpresas.text} to={Pages.ListaEmpresas.to} icon={Pages.ListaEmpresas.icon} id={Pages.ListaEmpresas.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.listaDiasCalendario.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.listaDiasCalendario.text} to={Pages.listaDiasCalendario.to} icon={Pages.listaDiasCalendario.icon} id={Pages.listaDiasCalendario.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.pedirVacaciones.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.pedirVacaciones.text} to={Pages.pedirVacaciones.to} icon={Pages.pedirVacaciones.icon} id={Pages.pedirVacaciones.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.pedirVacacionesUsuario.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.pedirVacacionesUsuario.text} to={Pages.pedirVacacionesUsuario.to} icon={Pages.pedirVacacionesUsuario.icon} id={Pages.pedirVacacionesUsuario.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.listaSolicitudesVacaciones.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.listaSolicitudesVacaciones.text} to={Pages.listaSolicitudesVacaciones.to} icon={Pages.listaSolicitudesVacaciones.icon} id={Pages.listaSolicitudesVacaciones.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.listaMisSolicitudesVacaciones.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.listaMisSolicitudesVacaciones.text} to={Pages.listaMisSolicitudesVacaciones.to} icon={Pages.listaMisSolicitudesVacaciones.icon} id={Pages.listaMisSolicitudesVacaciones.id}></NavItem>
-					</AuthorityCheckNav>
-					<AuthorityCheckNav authority={Pages.listaUsuariosEmpresa.authority} userAuthority={listaGrupos?.grupos}>
-						<NavItem text={Pages.listaUsuariosEmpresa.text} to={Pages.listaUsuariosEmpresa.to} icon={Pages.listaUsuariosEmpresa.icon} id={Pages.listaUsuariosEmpresa.id}></NavItem>
-					</AuthorityCheckNav>
+				
 					{/* <AuthorityCheckNav authority={Pages.listaItem.authority} userAuthority={listaGrupos?.grupos}>
 						<NavItem text={Pages.listaItem.text} to={Pages.listaItem.to} icon={Pages.listaItem.icon} id={Pages.listaItem.id}></NavItem>
 					</AuthorityCheckNav> */}
-					<AuthorityCheckNav authority={Pages.listaProveedoresEmpresa.authority} userAuthority={listaGrupos?.grupos}>
+					{/* <AuthorityCheckNav authority={Pages.listaProveedoresEmpresa.authority} userAuthority={listaGrupos?.grupos}>
 						<NavItem text={Pages.listaProveedoresEmpresa.text} to={Pages.listaProveedoresEmpresa.to} icon={Pages.listaProveedoresEmpresa.icon} id={Pages.listaProveedoresEmpresa.id}></NavItem>
 					</AuthorityCheckNav>
 					<AuthorityCheckNav authority={Pages.listaItemsEmpresa.authority} userAuthority={listaGrupos?.grupos}>
@@ -81,9 +61,9 @@ const DefaultAsideTemplate = () => {
 					</AuthorityCheckNav>
 					<AuthorityCheckNav authority={Pages.listaOrdenesCompra.authority} userAuthority={listaGrupos?.grupos}>
 						<NavItem text={Pages.listaOrdenesCompra.text} to={Pages.listaOrdenesCompra.to} icon={Pages.listaOrdenesCompra.icon} id={Pages.listaOrdenesCompra.id}></NavItem>
-					</AuthorityCheckNav>
+					</AuthorityCheckNav> */}
 					{/* <NavTitle>Registros</NavTitle> */}
-					<NavCollapse text="Registro" icon="HeroDocumentText" to={''}>
+					{/* <NavCollapse text="Registro" icon="HeroDocumentText" to={''}>
 						<AuthorityCheckNav authority={Pages.listaCategorias.authority} userAuthority={listaGrupos?.grupos}>
 							<NavItem text="Lista Categorías" to={Pages.listaCategorias.to} />
 						</AuthorityCheckNav>
@@ -93,7 +73,7 @@ const DefaultAsideTemplate = () => {
 					</NavCollapse>
 					<AuthorityCheckNav authority={Pages.listaClientes.authority} userAuthority={listaGrupos?.grupos}>
 						<NavItem text={Pages.listaClientes.text} to={Pages.listaClientes.to} icon={Pages.listaClientes.icon} id={Pages.listaClientes.id}></NavItem>
-					</AuthorityCheckNav>
+					</AuthorityCheckNav> */}
 					{/* <NavItem {...appPages.salesAppPages.subPages.salesDashboardPage} />
 					<NavItem {...appPages.aiAppPages.subPages.aiDashboardPage}>
 						<Badge

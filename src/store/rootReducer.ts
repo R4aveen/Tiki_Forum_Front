@@ -3,7 +3,7 @@ import RtkQueryService from '@/services/RtkQueryService'
 import auth, { AuthState, LOGOUT } from './slices/auth/authSlice'   
 import core, { CoreState } from './slices/core/coreSlice'
 import invitacion, { InvitacionState } from './slices/invitacion/invitacionSlice'
-import empresa, { EmpresaState } from './slices/empresa/empresaSlice'
+// import empresa, { EmpresaState } from './slices/empresa/empresaSlice'
 import calendario, { CalendarioState } from './slices/calendario/calendarioSlice'
 import item, { ItemState } from './slices/item/itemSlice'
 // import bodega, { BodegaState } from './slices/bodega/bodegaSlice'
@@ -14,8 +14,8 @@ export type RootState = CombinedState<{
     auth: AuthState
     core: CoreState
     invitacion: InvitacionState
-    empresa: EmpresaState
-    calendario: CalendarioState
+    // empresa: EmpresaState
+    // calendario: CalendarioState
     item: ItemState
     // bodega: BodegaState
     cliente: ClienteState
@@ -31,11 +31,7 @@ export interface AsyncReducers {
 const staticReducers = {
     auth,
     core,
-    invitacion,
-    empresa,
-    calendario,
-    item,
-    // bodega,
+
     cliente,
     foro,
     [RtkQueryService.reducerPath]: RtkQueryService.reducer,

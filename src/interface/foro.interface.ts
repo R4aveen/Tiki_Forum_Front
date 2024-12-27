@@ -1,9 +1,21 @@
+export interface IUsuario {
+    id: number;
+    username: string;
+    email: string;
+    first_name: string;
+    last_name: string;
+}
+
 export interface IForo {
     id: number;
     nombre: string;
     descripcion: string;
     imagen?: string;
     creado_por: IUsuario;
+    likes: IForoLike[];
+    comentarios: IComentario[];
+    comentarios_count: number;
+    likes_count: number;
 }
 
 export interface ICategoria {
@@ -11,27 +23,33 @@ export interface ICategoria {
     foro: IForo;
     nombre: string;
     descripcion: string;
+    comentarios_count: number;
+    likes_count: number;
 }
 
 export interface IComentario {
     id: number;
-    usuario: IUsuario;
-    foro?: IForo;
-    categoria?: ICategoria;
     contenido: string;
-    fecha_creacion: Date;
+    usuario: {
+        first_name: string;
+        last_name: string;
+    };
+    fecha_creacion: string;
+    comentario_padre?: number;
+    hijos: IComentario[];
 }
 
-export interface ILike {
+export interface IForoLike {
     id: number;
     usuario: IUsuario;
-    foro?: IForo;
-    categoria?: ICategoria;
+    foro: IForo;
     fecha_creacion: Date;
+    activo: boolean;
 }
 
-export interface IUsuario {
+export interface IComentarioLike {
     id: number;
-    username: string;
-    email: string;
+    usuario: IUsuario;
+    comentario: IComentario;
+    fecha_creacion: Date;
 }
